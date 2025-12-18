@@ -25,7 +25,7 @@ export default function Home() {
   const length = !Number.isNaN(queryLength) ? queryLength : 100;
   return (
     <div
-      className={`${geistSans.className} ${geistMono.className} flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black`}
+      className={`${geistSans.className} ${geistMono.className} flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans`}
     >
       {Array.from({ length }).map((_, index) => (
         <EmblaCarousel key={index} slides={SLIDES} options={OPTIONS} />
